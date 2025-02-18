@@ -1,0 +1,25 @@
+[13-Feb-2025 19:02:23 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yakutvil_database.hero_images' doesn't exist in /home/yakutvil/public_html/public/index.php:5
+Stack trace:
+#0 /home/yakutvil/public_html/public/index.php(5): PDO->query('SELECT * FROM h...')
+#1 {main}
+  thrown in /home/yakutvil/public_html/public/index.php on line 5
+[13-Feb-2025 19:02:23 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yakutvil_database.hero_images' doesn't exist in /home/yakutvil/public_html/public/index.php:5
+Stack trace:
+#0 /home/yakutvil/public_html/public/index.php(5): PDO->query('SELECT * FROM h...')
+#1 {main}
+  thrown in /home/yakutvil/public_html/public/index.php on line 5
+[13-Feb-2025 19:02:24 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yakutvil_database.hero_images' doesn't exist in /home/yakutvil/public_html/public/index.php:5
+Stack trace:
+#0 /home/yakutvil/public_html/public/index.php(5): PDO->query('SELECT * FROM h...')
+#1 {main}
+  thrown in /home/yakutvil/public_html/public/index.php on line 5
+[13-Feb-2025 19:02:24 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yakutvil_database.hero_images' doesn't exist in /home/yakutvil/public_html/public/index.php:5
+Stack trace:
+#0 /home/yakutvil/public_html/public/index.php(5): PDO->query('SELECT * FROM h...')
+#1 {main}
+  thrown in /home/yakutvil/public_html/public/index.php on line 5
+[13-Feb-2025 19:02:24 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yakutvil_database.hero_images' doesn't exist in /home/yakutvil/public_html/public/index.php:5
+Stack trace:
+#0 /home/yakutvil/public_html/public/index.php(5): PDO->query('SELECT * FROM h...')
+#1 {main}
+  thrown in /home/yakutvil/public_html/public/index.php on line 5

@@ -1,0 +1,23 @@
+.privacy-policy-container {
+    max-width: 900px;
+    margin: 100px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+  }
+  
+  .privacy-policy-container h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .privacy-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+  }
+  

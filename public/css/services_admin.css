@@ -1,0 +1,173 @@
+:root {
+    --primary-color: #FFD700;
+    --secondary-color: #FFC107;
+    --dark-color: #333;
+    --light-bg: #fff;
+    --transition-speed: 0.3s;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    background: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+.services-admin-container {
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 20px;
+    background: var(--light-bg);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.services-admin-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--dark-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+}
+
+.service-form {
+    margin-bottom: 30px;
+}
+
+.service-form h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--dark-color);
+}
+
+.service-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--dark-color);
+}
+
+.service-form input[type="text"],
+.service-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color var(--transition-speed) ease;
+}
+
+.service-form input[type="text"]:focus,
+.service-form textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.service-form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background: var(--primary-color);
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--dark-color);
+    cursor: pointer;
+    transition: background var(--transition-speed) ease, transform var(--transition-speed) ease;
+}
+
+.service-form button:hover {
+    background: var(--secondary-color);
+    transform: translateY(-3px);
+}
+
+.services-list h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: var(--dark-color);
+}
+
+.service-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.service-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.service-header h4 {
+    font-size: 1.4rem;
+    margin: 0;
+    color: var(--dark-color);
+}
+.service-header i {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+}
+
+.service-description {
+    margin-top: 5px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.service-actions {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.service-actions .btn {
+    flex: 1;
+    text-align: center;
+    background: var(--primary-color);
+    color: var(--dark-color);
+    padding: 8px 0;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background var(--transition-speed) ease;
+}
+.service-actions .btn:hover {
+    background: var(--secondary-color);
+}
+.service-actions .delete {
+    background: #ff4d4d;
+    color: #fff;
+}
+.service-actions .delete:hover {
+    background: #ff1a1a;
+}
+
+.alert {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.alert.error {
+    background: #ffcccc;
+    color: #a00;
+}
+
+.alert.success {
+    background: #ccffcc;
+    color: #070;
+}
+
+@media (max-width: 480px) {
+    .services-admin-container {
+        margin: 20px 10px;
+        padding: 15px;
+    }
+    .service-form h3, .services-list h3 {
+        font-size: 1.3rem;
+    }
+}

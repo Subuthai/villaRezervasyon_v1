@@ -1,0 +1,179 @@
+:root {
+    --primary-color: #FFD700;
+    --secondary-color: #FFC107;
+    --dark-color: #333;
+    --light-bg: #fff;
+    --border-color: #ddd;
+    --transition-speed: 0.3s;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    background: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+.places-admin-container {
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 20px;
+    background: var(--light-bg);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.places-admin-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--dark-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+}
+
+.actions {
+    text-align: right;
+    margin-bottom: 20px;
+}
+.actions .btn {
+    background: var(--primary-color);
+    color: var(--dark-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background var(--transition-speed) ease;
+}
+.actions .btn:hover {
+    background: var(--secondary-color);
+}
+
+.places-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.place-item {
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.place-thumbnail img {
+    width: 100px;
+    height: auto;
+    border-radius: 4px;
+    object-fit: cover;
+}
+.place-info {
+    flex: 1;
+}
+.place-info h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.6rem;
+    color: var(--dark-color);
+}
+.place-info p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: var(--dark-color);
+}
+.place-actions {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+.place-actions .btn {
+    flex: 1;
+    text-align: center;
+    background: var(--primary-color);
+    color: var(--dark-color);
+    padding: 8px 0;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background var(--transition-speed) ease;
+}
+.place-actions .btn:hover {
+    background: var(--secondary-color);
+}
+.place-actions .delete {
+    background: #ff4d4d;
+    color: #fff;
+}
+.place-actions .delete:hover {
+    background: #ff1a1a;
+}
+
+.alert {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.alert.error {
+    background: #ffcccc;
+    color: #a00;
+}
+
+.alert.success {
+    background: #ccffcc;
+    color: #070;
+}
+
+.place-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.place-form label {
+    font-weight: bold;
+    color: var(--dark-color);
+}
+.place-form input[type="text"],
+.place-form textarea,
+.place-form input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color var(--transition-speed) ease;
+}
+.place-form input:focus,
+.place-form textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+.place-form button {
+    padding: 10px;
+    background: var(--primary-color);
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--dark-color);
+    cursor: pointer;
+    transition: background var(--transition-speed) ease, transform var(--transition-speed) ease;
+}
+.place-form button:hover {
+    background: var(--secondary-color);
+    transform: translateY(-3px);
+}
+
+@media (max-width: 480px) {
+    .places-admin-container {
+        margin: 20px 10px;
+        padding: 15px;
+    }
+    .places-admin-container h2 {
+        font-size: 1.8rem;
+    }
+    .actions .btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
